@@ -1,0 +1,236 @@
+body {
+  font-family: "Tajawal", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  direction: rtl;
+  text-align: right;
+}
+
+header {
+  background: linear-gradient(45deg, #4a90e2, #7b4397);
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+header:hover {
+  background: linear-gradient(45deg, #7b4397, #4a90e2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+.hero {
+  background: url("../images/hero.jpg") no-repeat center center/cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #000; /* تغيير لون النص إلى الأسود */
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.news-container,
+.gallery-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.news-item,
+.gallery-item {
+  flex: 1 1 30%;
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.news-item:hover,
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #7b4397;
+}
+
+.results-container,
+.honor-roll-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.results-container select,
+.results-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#results-display,
+#honor-roll-display {
+  margin-top: 20px;
+}
+
+.results-table,
+.honor-roll-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.results-table th,
+.results-table td,
+.honor-roll-table th,
+.honor-roll-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.results-table th,
+.honor-roll-table th {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-info a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: linear-gradient(45deg, #4a90e2, #7b4397);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+footer:hover {
+  background: linear-gradient(45deg, #7b4397, #4a90e2);
+}
