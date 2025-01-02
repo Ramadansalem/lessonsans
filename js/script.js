@@ -147,9 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
                             (student) => `
                             <tr>
                                 <td>${student.name}</td>
-                                <td>${student.total}</td>
-                                <td>${student.percentage}</td>
-                                <td>${student.grade}</td>
+                                <td>${student.الدرجة}</td>
+                                <td>${student.النسبة}</td>
+                                <td>${student.المادة}</td>
                             </tr>
                         `
                           )
