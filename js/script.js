@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <th>الاسم</th>
                             <th>المجموع</th>
                             <th>النسبة المئوية</th>
-                            <th>التقدير</th>
+                            <th>المادة</th>
                         </tr>
                     </thead>
                     <tbody>
