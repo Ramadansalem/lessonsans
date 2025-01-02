@@ -101,35 +101,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayHonorRoll() {
     const honorRollData = {
-      "الصف الأول": [
-        { name: "الطالب الأول", total: 290, percentage: "96.7%", grade: "A+" },
-        { name: "الطالب الثاني", total: 280, percentage: "93.3%", grade: "A" },
-        { name: "الطالب الثالث", total: 270, percentage: "90.0%", grade: "A-" },
-      ],
-      "الصف الثاني": [
-        { name: "الطالب الأول", total: 295, percentage: "98.3%", grade: "A+" },
-        { name: "الطالب الثاني", total: 285, percentage: "95.0%", grade: "A" },
-        { name: "الطالب الثالث", total: 275, percentage: "91.7%", grade: "A-" },
-      ],
-      "الصف الثالث": [
-        { name: "الطالب الأول", total: 300, percentage: "100%", grade: "A+" },
-        { name: "الطالب الثاني", total: 290, percentage: "96.7%", grade: "A" },
-        { name: "الطالب الثالث", total: 280, percentage: "93.3%", grade: "A-" },
-      ],
-      "الصف الرابع": [
-        { name: "الطالب الأول", total: 298, percentage: "99.3%", grade: "A+" },
-        { name: "الطالب الثاني", total: 288, percentage: "96.0%", grade: "A" },
-        { name: "الطالب الثالث", total: 278, percentage: "92.7%", grade: "A-" },
-      ],
-      "الصف الخامس": [
-        { name: "الطالب الأول", total: 297, percentage: "99.0%", grade: "A+" },
-        { name: "الطالب الثاني", total: 287, percentage: "95.7%", grade: "A" },
-        { name: "الطالب الثالث", total: 277, percentage: "92.3%", grade: "A-" },
-      ],
-      "الصف السادس": [
-        { name: "الطالب الأول", total: 299, percentage: "99.7%", grade: "A+" },
-        { name: "الطالب الثاني", total: 289, percentage: "96.3%", grade: "A" },
-        { name: "الطالب الثالث", total: 279, percentage: "93.0%", grade: "A-" },
+      "الصف الثالث - برمجيات الحاسوب": [
+        {
+          name: "رتاج امحمد عبد الخالق ",
+          الدرجة: 19,
+          النسبة: "95%",
+          المادة: "التدريبات العملية",
+        },
+        {
+          name: "محمد يونس بلقاسم",
+          الدرجة: 20,
+          النسبة: "100%",
+          المادة: "تصميم مواقع الانترنت",
+        },
+        {
+          name: "علي سعيد سعد",
+          الدرجة: 20,
+          النسبة: "100%",
+          المادة: "مباديء تصميم مواقع الانترنت-",
+        },
       ],
     };
 
