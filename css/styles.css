@@ -1,3 +1,4 @@
+/* ✅ القاعدة العامة */
 body {
   font-family: "Tajawal", sans-serif;
   line-height: 1.6;
@@ -9,6 +10,7 @@ body {
   text-align: right;
 }
 
+/* ✅ رأس الصفحة */
 header {
   background: linear-gradient(45deg, #4a90e2, #7b4397);
   color: #fff;
@@ -31,6 +33,7 @@ header h1 {
   font-size: 2.5em;
 }
 
+/* ✅ شريط التنقل */
 nav ul {
   list-style: none;
   padding: 0;
@@ -55,6 +58,7 @@ nav ul li a:hover {
   color: #ffdd57;
 }
 
+/* ✅ صورة hero */
 .hero {
   background: url("../images/hero.jpg") no-repeat center center/cover;
   height: 500px;
@@ -64,7 +68,7 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   padding: 20px;
-  color: #000; /* تغيير لون النص إلى الأسود */
+  color: #000;
 }
 
 .hero h2 {
@@ -76,6 +80,7 @@ nav ul li a:hover {
   font-size: 1.5em;
 }
 
+/* ✅ الأقسام */
 section {
   padding: 60px 20px;
 }
@@ -87,6 +92,7 @@ section h2 {
   color: #333;
 }
 
+/* ✅ الحاوية */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -94,6 +100,7 @@ section h2 {
   padding: 0 20px;
 }
 
+/* ✅ الأخبار والمعرض */
 .news-container,
 .gallery-container {
   display: flex;
@@ -122,6 +129,7 @@ section h2 {
   border-radius: 5px;
 }
 
+/* ✅ النماذج */
 form {
   display: flex;
   flex-direction: column;
@@ -160,6 +168,7 @@ form button:hover {
   background: #7b4397;
 }
 
+/* ✅ نتائج ولوحة الشرف */
 .results-container,
 .honor-roll-container {
   text-align: center;
@@ -201,6 +210,7 @@ form button:hover {
   text-align: center;
 }
 
+/* ✅ معلومات الاتصال */
 .contact-info {
   text-align: center;
   margin-top: 20px;
@@ -218,6 +228,7 @@ form button:hover {
   text-decoration: underline;
 }
 
+/* ✅ الشريط السفلي */
 footer {
   background: linear-gradient(45deg, #4a90e2, #7b4397);
   color: #fff;
@@ -233,4 +244,108 @@ footer {
 
 footer:hover {
   background: linear-gradient(45deg, #7b4397, #4a90e2);
+}
+
+/* ✅ Media Queries — Responsive تحسين كامل */
+
+/* ✅ تابلت */
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .hero {
+    height: 350px;
+    padding: 15px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  .news-item,
+  .gallery-item {
+    flex: 1 1 45%;
+  }
+}
+
+/* ✅ هاتف */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .hero {
+    height: 300px;
+    padding: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .news-item,
+  .gallery-item {
+    flex: 1 1 100%;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .results-table th,
+  .results-table td,
+  .honor-roll-table th,
+  .honor-roll-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+/* ✅ هاتف صغير جدا */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .hero {
+    height: 250px;
+    padding: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  .news-item,
+  .gallery-item {
+    flex: 1 1 100%;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
